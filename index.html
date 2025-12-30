@@ -1,17 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>DevOps Master</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乌野高校排球部 | Karasuno High</title>
     <style>
-        body { background-color: #1a1a1a; color: #00ff00; font-family: courier; text-align: center; margin-top: 100px; }
-        h1 { font-size: 60px; color: #ff00ff; } /* 变成了粉色！ */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d; /* 乌野黑 */
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            border: 4px solid #f99000; /* 乌野橙 */
+            padding: 40px;
+            border-radius: 0px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 20px rgba(249, 144, 0, 0.3);
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #f99000;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 0;
+            letter-spacing: 8px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 20px;
+        }
+        .quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin: 30px 0;
+            color: #ccc;
+        }
+        .btn {
+            background-color: #f99000;
+            color: #000;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #fff;
+            box-shadow: 0 0 30px #f99000;
+            transform: scale(1.05);
+        }
+        /* 简单的飞翔动画 */
+        .fly {
+            animation: fly 3s infinite ease-in-out;
+            display: inline-block;
+        }
+        @keyframes fly {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
     </style>
 </head>
 <body>
-    <h1>✨ CI/CD Success! ✨</h1>
-    <p>This page was deployed AUTOMATICALLY via GitHub Actions.</p>
-    <p>No more SSH! No more manual copying!</p>
-    <p>Hello World! Automation is King!</p>
+    <div class="container">
+        <h1>Karasuno <span class="fly">🏐</span></h1>
+        <h2>乌野高校排球部</h2>
+        
+        <div class="quote">
+            "We don't need memories.<br>
+            我们要做的，是向更高处飞翔！"
+        </div>
+
+        <a href="#" class="btn">JOIN THE TEAM</a>
+        
+        <div class="footer">
+            Deployed by DevOps Engineer: Cyrus<br>
+            Powered by Docker Compose
+        </div>
+    </div>
 </body>
 </html>
