@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-=======
-version: '3.8'
->>>>>>> 5061dc013cfe18666170dce209f109e49672c70a
-
 services:
   web:
     build: .
     container_name: karasuno-manager
     ports:
       - "8080:80"
-<<<<<<< HEAD
     restart: always
-=======
-    restart: always
->>>>>>> 5061dc013cfe18666170dce209f109e49672c70a
